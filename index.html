@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Accounts Dashboard Bikaner</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      padding-top: 20px;
+      overflow-y: auto; /* Enable scrolling for long lists */
+    }
+
+    .content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+
+    .sidebar a {
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #ddd;
+      display: block;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #555;
+    }
+
+    .sidebar a.active {
+      background-color: #f4511e;
+      color: white;
+      font-weight: bold;
+    }
+
+    .sidebar h3 {
+      color: #f4511e;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Add a subtle shadow to the sidebar */
+    .sidebar {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidebar">
+  <h3>Dashboard Menu</h3>
+  <a href="#Dashboard" class="active">Dashboard</a>
+  <a href="#Administrations">Administrations</a>
+  <a href="#Audit & Efficiency">Audit & Efficiency</a>
+  <a href="#Books & Budget">Books & Budget</a>
+  <a href="#Expenditure">Expenditure</a>
+  <a href="#Establishment">Establishment</a>
+  <a href="#Finance">Finance</a>
+  <a href="#NPS">NPS</a>
+  <a href="#Pension">Pension</a>
+  <a href="#Provident fund">Provident fund</a>
+  <a href="#Record">Record</a>
+  <a href="#Store Verification">Store Verification</a>
+  <a href="#Miscellaneous">Miscellaneous</a>
+</div>
+
+<div class="content">
+  <!-- Your HTML content goes here -->
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+    // Add click event listener to toggle the active class on sidebar links
+    $(".sidebar a").on('click', function(){
+      $(".sidebar a").removeClass("active");
+      $(this).addClass("active");
+    });
+  });
+</script>
+</body>
+</html>
